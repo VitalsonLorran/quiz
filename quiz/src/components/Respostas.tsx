@@ -2,6 +2,7 @@ import { EstruturaRespostas } from "@/types/EstruturaRespostas"
 
 export const Respostas = (EstruturaRespostas: EstruturaRespostas) => {
     
+    
     const clicouBotao = () => {
         alert("clicou")
     }
