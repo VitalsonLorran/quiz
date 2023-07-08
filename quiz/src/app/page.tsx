@@ -1,15 +1,38 @@
 "use client"
 
+import { Respostas } from "@/components/Respostas"
+import { ListadeResposta } from "@/types/ListadeResposta"
+ 
 export default function Home() {
+
+
+
+
   return (
     <div className="flex flex-col bg-sky-700 w-screen h-screen justify-center items-center">
-      <div className="bg-white h-80 w-80">
+      <div className="bg-white h-2/3 w-1/3">
       <div className="text-black">Quiz de culinária</div>
-      <div className="text-black">Qual ingrediente nào pode faltar?</div>
-      <div className="text-black">Resposta 1</div>
-      <div className="text-black">Resposta 2</div>
-      <div className="text-black">Resposta 3</div>
-      <div className="text-black">Resposta 4</div>
+      <Respostas 
+          Pergunta="Qual ingrediente não pode faltar?" 
+          ListaRespostas={
+            {
+              ListadeResposta: [
+                {Resposta: "Farinha",
+                VouF: true
+              },
+              {Resposta: "Sal",
+                VouF: false
+              },
+              {Resposta: "Água",
+                VouF: false
+              },
+              {Resposta: "Repolho",
+                VouF: false
+              }
+            ]
+            }
+          }      
+      />
       <div className="text-black">Pergunta 1 de 1</div>
       </div>
     </div>
