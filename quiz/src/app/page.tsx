@@ -13,25 +13,14 @@ export default function Home() {
       <div className="flex flex-col  rounded-md bg-white h-1/2 w-1/3 shadow shadow-black">
       <div className="text-black text-3xl border-b-2 p-5">Quiz de culinária</div>
       <Respostas 
-          Pergunta="1. Qual ingrediente não pode faltar?" 
-          ListaRespostas={
-            {
-              ListadeResposta: [
-                {Resposta: "Farinha",
-                VouF: true
-              },
-              {Resposta: "Sal",
-                VouF: false
-              },
-              {Resposta: "Água",
-                VouF: false
-              },
-              {Resposta: "Repolho",
-                VouF: false
-              }
+          Pergunta="1. Qual ingrediente não pode faltar?"
+          ListaRespostas={{
+            ListadeResposta: [
+              "Farinha", "Sal", "Água", "Repolho"
             ]
-            }
-          }      
+          }} 
+          RespostaCorreta={1}
+
       />
       <div className="mt-2  text-black text-center">Pergunta 1 de 1</div>
       </div>
