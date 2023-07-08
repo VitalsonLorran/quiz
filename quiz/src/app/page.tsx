@@ -9,11 +9,11 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col bg-sky-700 w-screen h-screen justify-center items-center">
-      <div className="bg-white h-2/3 w-1/3">
-      <div className="text-black">Quiz de culinária</div>
+    <div className="flex flex-col font-bold bg-sky-700 w-screen h-screen justify-center items-center">
+      <div className="flex flex-col  rounded-md bg-white h-1/2 w-1/3">
+      <div className="text-black text-3xl border-b-2 p-5">Quiz de culinária</div>
       <Respostas 
-          Pergunta="Qual ingrediente não pode faltar?" 
+          Pergunta="1. Qual ingrediente não pode faltar?" 
           ListaRespostas={
             {
               ListadeResposta: [
@@ -33,7 +33,7 @@ export default function Home() {
             }
           }      
       />
-      <div className="text-black">Pergunta 1 de 1</div>
+      <div className="flex mt-2  text-black justify-center items-center"><div>Pergunta 1 de 1</div></div>
       </div>
     </div>
   )
